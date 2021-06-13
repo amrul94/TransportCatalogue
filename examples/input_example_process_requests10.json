@@ -1,0 +1,32 @@
+{
+    "serialization_settings": {
+        "file": "transport_catalogue10.db"
+    },
+    "stat_requests": [
+        {
+            "id": 1,
+            "name": "289",
+            "type": "Bus"
+        },
+        {
+            "from": "Zagorye",
+            "id": 2,
+            "to": "Moskvorechye",
+            "type": "Route"
+        },
+        {
+            "from": "Moskvorechye",
+            "id": 3,
+            "to": "Zagorye",
+            "type": "Route"
+        },
+        {
+            "from": "Lipetskaya ulitsa 40",
+            "id": 4,
+            "to": "Lipetskaya ulitsa 40",
+            "type": "Route"
+        }
+    ]
+}
+
+

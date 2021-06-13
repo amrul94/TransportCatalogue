@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "graph.proto";
+
+package transport_catalogue_serialize;
+
+message Item {
+  enum WeightType {
+    WAIT = 0;
+    BUS = 1;
+  }
+  WeightType type = 1;
+  int32 span_count = 2;
+  string name = 3;
+}
+
+message TransportRouter {
+  Graph graph = 1;
+  map<string, uint64> wait_index = 2;
+  repeated Item item = 3;
+}

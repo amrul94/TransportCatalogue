@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+import "graph.proto";
+import "map_renderer.proto";
+import "transport_router.proto";
+
+package transport_catalogue_serialize;
+
+message Coordinates {
+  double lat = 1; // Широта
+  double lng = 2; // Долгота
+}
+
+message Stop {
+  string name = 1;
+  Coordinates coordinates = 2;
+}
+
+message Bus {
+  string number = 1;
+  bool is_roundtrip = 2;
+  repeated string stop = 3;
+}
+
+message DistanceBetweenStops {
+  string from_stop = 1;
+  string to_stop = 2;
+  int32 distance = 3;
+}
+
+message Catalogue {
+  repeated Bus bus = 1;
+  repeated Stop stop = 2;
+  repeated DistanceBetweenStops distance = 3;
+}
+
+message TransportCatalogue {
+  Catalogue catalogue = 1;
+  MapRenderer map_renderer = 2;
+  TransportRouter transport_router = 3;
+  Router router = 4;
+}

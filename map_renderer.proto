@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package transport_catalogue_serialize;
+
+import "svg.proto";
+
+message RouteRenderer {
+  repeated Point stops_coordinates = 1;
+  Color stroke_color = 2;
+  double line_width = 3;
+}
+
+message TextRenderer {
+  Point position = 1;
+  Point label_offset = 2;
+  uint32 label_font_size = 3;
+  string font_weight = 4;
+  bool has_font_weight = 5;
+  string text = 6;
+  Color underlayer_color = 7;
+  double underlayer_width = 8;
+  Color text_color = 9;
+}
+
+message StopRenderer {
+  Point centre = 1;
+  double stop_radius = 2;
+}
+
+message MapRenderer {
+  repeated RouteRenderer routes = 1;
+  repeated TextRenderer routes_names = 2;
+  repeated StopRenderer stops = 3;
+  repeated TextRenderer stops_names = 4;
+}

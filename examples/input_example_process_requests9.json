@@ -1,0 +1,71 @@
+{
+    "serialization_settings": {
+        "file": "transport_catalogue9.db"
+    },
+    "stat_requests": [
+        {
+            "id": 1,
+            "name": "297",
+            "type": "Bus"
+        },
+        {
+            "id": 2,
+            "name": "635",
+            "type": "Bus"
+        },
+        {
+            "id": 3,
+            "name": "828",
+            "type": "Bus"
+        },
+        {
+            "id": 4,
+            "name": "Universam",
+            "type": "Stop"
+        },
+        {
+            "from": "Biryulyovo Zapadnoye",
+            "id": 5,
+            "to": "Apteka",
+            "type": "Route"
+        },
+        {
+            "from": "Biryulyovo Zapadnoye",
+            "id": 6,
+            "to": "Pokrovskaya",
+            "type": "Route"
+        },
+        {
+            "from": "Biryulyovo Tovarnaya",
+            "id": 7,
+            "to": "Pokrovskaya",
+            "type": "Route"
+        },
+        {
+            "from": "Biryulyovo Tovarnaya",
+            "id": 8,
+            "to": "Biryulyovo Zapadnoye",
+            "type": "Route"
+        },
+        {
+            "from": "Biryulyovo Tovarnaya",
+            "id": 9,
+            "to": "Prazhskaya",
+            "type": "Route"
+        },
+        {
+            "from": "Apteka",
+            "id": 10,
+            "to": "Biryulyovo Tovarnaya",
+            "type": "Route"
+        },
+        {
+            "from": "Biryulyovo Zapadnoye",
+            "id": 11,
+            "to": "Tolstopaltsevo",
+            "type": "Route"
+        }
+    ]
+}
+
+
